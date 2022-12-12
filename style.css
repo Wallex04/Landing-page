@@ -42,11 +42,11 @@ nav {
     margin: 50px;   
 }
 .containerA {
-    background-color: white;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-    padding-left: 100px;
+    padding-left: 80px;
 }
 .container {
     background-color:black;
@@ -55,6 +55,7 @@ nav {
     margin-top: 40px;
     color: white;
     padding-left: 100px;
+    
 }
 .container2{
     flex-basis: 45%;
@@ -73,7 +74,7 @@ nav {
     height: 450px;
     margin-bottom: 100px;
     border-radius: 50%;
-    margin-right: 150px;
+    
 }
 
 .fab {
@@ -86,15 +87,14 @@ nav {
     justify-content: space-between;
 }
 .col {
-    flex-basis: 25%;
-    
+    flex-basis: 33%;
+    padding-right: 80px;
 }
 .imge {
-    width: 400px;
-    height: 400px;
+    width: 420px;
+    height: 420px;
     margin-top: 40px;
     border-radius: 50%;
-    margin-right: 90px;
 }
 .Abt-me {
     font-size: 28px;
@@ -113,10 +113,14 @@ nav {
 }
 
 /*Mobile*/
-@media (max-width: 600px) {
+@media (max-width: 470px) {
     nav {
         display: block;
         text-align: end;
+    }
+    .drop-btn {
+        font-size: 20px;
+        margin-top: -80px;
     }
     .container, .containerA {
         flex-direction: column;
@@ -125,8 +129,8 @@ nav {
         flex-direction: column;
     }
     .imgs {
-        width: 350px;
-        height: 400px;
+        width: 300px;
+        height: 350px;
         margin-top: 70px;
         margin-left: -20px;
         border-radius: 20px;
@@ -136,8 +140,8 @@ nav {
         padding-right: 10px;
     }
     .imge {
-        width: 350px;
-        height: 400px;
+        width: 300px;
+        height: 350px;
         border-radius: 20px;
     }
   
@@ -177,6 +181,141 @@ nav {
 }
 
 
+@media (max-width: 770px) {
+    nav {
+        display: block;
+        text-align: end;
+    } 
+    .drop-btn {
+        font-size: 15px;
+    }
+    .heading1 {
+        font-size: 35px;
+    }
+    .heading {
+        font-size: 34px;
+    }
+    .description {
+        font-size: 22px;
+    }
+    .Abt-me {
+        font-size: 34px;
+    }
+    .Abou-me {
+        font-size: 22px;
+    }
+    .list {
+        font-size: 20px;
+    }
+    .container, .containerA {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .imgs {
+        width: 450px;
+        height: 500px;
+        margin-top: 70px;
+    
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    .fab {
+        padding-right: 10px;
+    }
+    .imge {
+        width: 450px;
+        height: 480px;
+        border-radius: 20px;
+    }
+  
+    nav, a, .drop-btn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding: 5px 5px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgb(0,0,0, 0.2);
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin-right: 10px;
+    }
+    .dropdown-content a:hover {
+        background-color: #bbb;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;  
+}
 
+}
 
-
+@media (max-width: 990px) {
+    nav {
+        display:inline-block;
+        text-align: end;
+    } 
+    .nav-link{
+        display: inline-block;
+        text-align: right;
+        font-size: 12px;
+    } 
+    .dropdown {
+        display: inline-block;
+        text-align: right;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .col {
+        flex-basis: 28%;
+    }
+    .containerA {
+        display: flex;
+        flex-basis: 35%;
+    }
+    .imgs {
+        width: 300px;
+        height: 350px;
+}
+.imge {
+    width: 300px;
+    height: 350px;
+}
+.Abt-me {
+    font-size: 23px;
+}
+.Abou-me {
+    font-size: 15px;
+}
+.heading, .heading1 {
+    font-size: 25px;
+}
+.description {
+    font-size: 17px;
+}
+.list {
+    font-size: 14px;
+}
+.col {
+    padding-right: 30px;
+}
+}*/
